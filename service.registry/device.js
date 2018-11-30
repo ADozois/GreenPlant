@@ -15,16 +15,32 @@ class Device {
         }
     }
 
-    getDeviceId(){
+    get DeviceId(){
         return this.deviceId;
     }
 
-    getStatus(){
+    get Status(){
         return this.status;
     }
 
-    getName(){
-        return this.status;
+    get Name(){
+        return this.name;
+    }
+
+    get Ip(){
+        return this.ip;
+    }
+
+    get Properties(){
+        return this.properties;
+    }
+
+    get Desired(){
+        return this.properties.desired;
+    }
+
+    get Reported(){
+        return this.properties.reported;
     }
 
     disconnect(){
