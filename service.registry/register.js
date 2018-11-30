@@ -72,6 +72,21 @@ class Registry{
         var object = new Device(objectProtoype.deviceId, objectProtoype.name, objectProtoype.ipAdresse);
         return object;
     }
+
+    get deviceList(){
+        return this.list;
+    }
+
+    get device(id){
+        for (let index = 0; index < this.list.length; index++) {
+            const element = array[index];
+            
+            if(element.DeviceId == id){
+                return element;
+            }
+        }
+        return undefined;
+    }
     
 }
 
