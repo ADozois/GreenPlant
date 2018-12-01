@@ -14,7 +14,7 @@ class Registry{
         this.manager = new TimeoutManager();
         this.redisClient = redis.createClient();
         this.redisClient.on("error", (err) => {
-            console.log("Error: " + err);
+            console.log("" + err);
         });
         this.redisClient.on("connect",() => {
             console.log("Connected");
@@ -77,7 +77,7 @@ class Registry{
         return this.list;
     }
 
-    get device(id){
+    getdevice(id){
         for (let index = 0; index < this.list.length; index++) {
             const element = array[index];
             
