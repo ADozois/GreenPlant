@@ -10,7 +10,7 @@ var testFunction = function (){
     console.log('The function was executed');
 }
 
-describe("Test Device class", function(){
+describe("Test Register class", function(){
 
     beforeEach(function () {
         this.sandbox = sinon.createSandbox();
