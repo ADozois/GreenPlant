@@ -13,6 +13,7 @@ class Registry{
         this.count = 0;
         this.manager = new TimeoutManager();
         this.redisClient = redis.createClient();
+        this.mqttClient = undefined;
         this.redisClient.on("error", (err) => {
             console.log("" + err);
         });
